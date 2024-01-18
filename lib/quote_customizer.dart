@@ -95,7 +95,7 @@ class _QuoteCustomizerState extends State<QuoteCustomizer> {
                     _saveQuote(_controller.text);
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                        content: Text('Updating widget: ${_controller.text}'),
+                        content: Text('Updating widget...'),
                         duration: Duration(milliseconds: 500),
                       ),
                     );
