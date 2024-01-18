@@ -2,21 +2,24 @@
     style="@style/Widget.Android.AppWidget.Container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="18dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="18dp"
+    android:paddingBottom="6dp"
     android:theme="@style/Theme.Android.AppWidgetContainer">
 
     <TextView
         android:id="@+id/appwidget_text"
         style="@style/Widget.Android.AppWidget.InnerView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="3dp"
+        android:autoSizeMinTextSize="24sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/appwidget_text"
+        android:gravity="start|center_vertical"
         android:text="@string/appwidget_text"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:background="@android:color/transparent"/>
+        android:textStyle="bold" />
 </RelativeLayout>
